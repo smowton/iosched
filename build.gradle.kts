@@ -23,9 +23,9 @@ buildscript {
     repositories {
         google()
         mavenCentral()
-        jcenter()
         // Android Build Server
         maven { url = uri("../iosched-prebuilts/m2repository") }
+        maven { url = uri("./inkpage") }
     }
     dependencies {
         classpath("com.android.tools.build:gradle:${Versions.ANDROID_GRADLE_PLUGIN}")
@@ -46,7 +46,6 @@ allprojects {
     repositories {
         google()
         mavenCentral()
-        jcenter()
 
         // For Android Build Server
         // - Material Design Components
@@ -57,6 +56,7 @@ allprojects {
         maven {
             url = uri("${project.rootDir}/../../../prebuilts/fullsdk/linux/extras/support/m2repository")
         }
+        maven { url = uri("./inkpage") }
 
         flatDir {
             dirs = setOf(file("libs"), project(":ar").file("libs"))
