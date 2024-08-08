@@ -56,7 +56,7 @@ allprojects {
         maven {
             url = uri("${project.rootDir}/../../../prebuilts/fullsdk/linux/extras/support/m2repository")
         }
-        maven { url = uri("./inkpage") }
+        maven { url = uri("${project.rootDir}/inkpage") }
 
         flatDir {
             dirs = setOf(file("libs"), project(":ar").file("libs"))
