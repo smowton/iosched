@@ -48,7 +48,7 @@ object Libs {
     const val FIREBASE_FUNCTIONS = "com.google.firebase:firebase-functions-ktx"
     const val FIREBASE_MESSAGING = "com.google.firebase:firebase-messaging"
     const val FIREBASE_UI_AUTH = "com.firebaseui:firebase-ui-auth"
-    const val FLEXBOX = "com.google.android:flexbox"
+    const val FLEXBOX = "com.google.android.flexbox:flexbox"
     const val FRAGMENT_KTX = "androidx.fragment:fragment-ktx"
     const val FRAGMENT_TEST = "androidx.fragment:fragment-testing"
     const val GLIDE = "com.github.bumptech.glide:glide"
